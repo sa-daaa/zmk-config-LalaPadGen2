@@ -41,7 +41,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "td_mo12";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 2>;
+            bindings = <&mo 1>, <&mo 3>;
         };
     };
 
@@ -85,23 +85,23 @@
         DEFAULT_LAYER {
             display-name = "Default";
             bindings = <
-&kp Q              &kp W      &kp E        &kp R                      &kp T                                                           &kp Y             &kp U              &kp I              &kp O        &kp P
-&mt AT_SIGN A      &kp S      &kp D        &kp F                      &kp G                                                           &kp H             &kp J              &kp K              &kp L        &mt2 EQUAL MINUS
-&mt2 LEFT_SHIFT Z  &kp X      &kp C        &kp V                      &kp B                                                           &kp N             &kp M              &kp COMMA          &kp PERIOD   &mt UNDER SLASH
-&kp LCTRL          &kp ESC    &kp TAB      &mt LEFT_GUI INT_MUHENKAN  &mt LEFT_ALT INT_HENKAN  &mt LEFT_SHIFT BACKSPACE  &lt 1 ENTER  &lt 2 SPACE       &mt RIGHT_ALT TAB  &mt RIGHT_GUI TAB  &lt 3 SLASH  &kp DEL
-                   &kp F2     &kp RIGHT    &kp DOWN                   &kp LEFT                 &kp UP                    &kp LG(UP)   &kp LG(LC(LEFT))  &kp LG(DOWN)       &kp LG(LC(RIGHT))  &none
-&mkp LCLK          &mkp RCLK  &mkp MCLK                                                                                                                                    &mkp LCLK          &mkp RCLK    &mkp MCLK
-&mkp MB5           &mkp MB4   &kp LG(TAB)  &kp LG(D)                  &kp LCTRL                                                       &mkp MB5          &mkp MB4           &kp LG(TAB)        &kp LG(D)    &kp LCTRL
+&kp Q              &kp W         &kp E        &kp R                      &kp T                                                           &kp Y             &kp U              &kp I                     &kp O               &kp P
+&mt AT_SIGN A      &kp S         &kp D        &kp F                      &kp G                                                           &kp H             &kp J              &kp K                     &kp L               &mt2 EQUAL MINUS
+&mt2 LEFT_SHIFT Z  &kp X         &kp C        &kp V                      &kp B                                                           &kp N             &kp M              &kp COMMA                 &kp PERIOD          &mt UNDER SLASH
+&kp LCTRL          &lt 2 ESCAPE  &lt 1 TAB    &mt LEFT_GUI INT_MUHENKAN  &mt LEFT_ALT INT_HENKAN  &mt LEFT_SHIFT BACKSPACE  &lt 1 ENTER  &lt 2 SPACE       &mt RIGHT_ALT TAB  &mt RIGHT_GUI INT_HENKAN  &lt 3 INT_MUHENKAN  &kp DEL
+                   &kp F2        &kp RIGHT    &kp DOWN                   &kp LEFT                 &kp UP                    &kp LG(UP)   &kp LG(LC(LEFT))  &kp LG(DOWN)       &kp LG(LC(RIGHT))         &none
+&mkp LCLK          &mkp RCLK     &mkp MCLK                                                                                                                                    &mkp LCLK                 &mkp RCLK           &mkp MCLK
+&mkp MB5           &mkp MB4      &kp LG(TAB)  &kp LG(D)                  &kp LCTRL                                                       &mkp MB5          &mkp MB4           &kp LG(TAB)               &kp LG(D)           &kp LCTRL
             >;
         };
 
         SECONDARY_LAYER {
             display-name = "secondary_layer";
             bindings = <
-&kp SEMICOLON     &kp COLON          &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                   &kp KP_NUMLOCK    &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS
-&kp AT            &kp UNDERSCORE     &kp DOLLAR        &kp PERCENT           &kp AMPERSAND                           &trans            &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
-&kp EQUAL         &kp F7             &kp EXCLAMATION   &kp DOUBLE_QUOTES     &kp HASH                                &trans            &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ASTERISK
-&trans            &trans             &trans            &trans                &trans                 &trans  &kp DEL  &trans            &trans             &kp KP_NUMBER_0  &kp KP_DOT       &kp LA(F4)
+&kp SEMICOLON     &kp COLON          &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS
+&kp AT            &kp UNDERSCORE     &kp DOLLAR        &kp PERCENT           &kp AMPERSAND                           &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp UNDER
+&kp EQUAL         &kp F7             &kp EXCLAMATION   &kp DOUBLE_QUOTES     &kp HASH                                &kp LC(LS(N))     &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ASTERISK
+&trans            &trans             &trans            &trans                &kp BACKSPACE          &trans  &kp DEL  &trans            &trans             &kp KP_NUMBER_0  &kp KP_DOT       &kp LA(F4)
                   &trans             &trans            &trans                &trans                 &trans  &trans   &trans            &trans             &trans           &trans
 &trans            &trans             &trans                                                                                                               &trans           &trans           &trans
 &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans            &trans                &trans                                  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans           &trans           &trans
@@ -111,13 +111,13 @@
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&kp KP_MINUS  &kp KP_PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                  &kp PAGE_UP    &kp HOME  &kp UP_ARROW    &kp END    &kp PRINTSCREEN
-&kp KP_SLASH  &kp KP_ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6                  &kp PAGE_DOWN  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp SCROLLLOCK
-&kp KP_EQUAL  &kp KP_N0        &kp KP_N1        &kp KP_N2        &kp KP_NUMBER_3                  &trans         &mkp MB4  &trans          &mkp MB5   &kp PAUSE_BREAK
-&trans        &trans           &trans           &trans           &trans           &trans  &trans  &trans         &trans    &trans          &trans     &trans
-              &trans           &trans           &trans           &trans           &trans  &trans  &trans         &trans    &trans          &trans
-&trans        &trans           &trans                                                                                      &trans          &trans     &trans
-&trans        &trans           &trans           &trans           &trans                           &trans         &trans    &trans          &trans     &trans
+&kp KP_MINUS  &kp KP_PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                  &kp F7  &kp F8  &kp F9  &kp F10  &kp PRINTSCREEN
+&kp KP_SLASH  &kp KP_ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6                  &kp F4  &kp F5  &kp F6  &kp F11  &kp SCROLLLOCK
+&kp KP_EQUAL  &kp KP_N0        &kp KP_N1        &kp KP_N2        &kp KP_NUMBER_3                  &kp F1  &kp F2  &kp F3  &kp F12  &kp PAUSE_BREAK
+&trans        &trans           &trans           &trans           &trans           &trans  &trans  &trans  &trans  &trans  &trans   &trans
+              &trans           &trans           &trans           &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans           &trans                                                                             &trans  &trans   &trans
+&trans        &trans           &trans           &trans           &trans                           &trans  &trans  &trans  &trans   &trans
             >;
         };
 
@@ -139,7 +139,7 @@
         compatible = "zmk,conditional-layers";
 
         Cond_Syslayer {
-            if-layers = <1 2>;
+            if-layers = <1 3>;
             then-layer = <3>;
         };
     };
