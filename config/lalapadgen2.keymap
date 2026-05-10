@@ -92,6 +92,20 @@
             bindings = <&kp LG(L)>;
             key-positions = <8 9>;
         };
+
+        kakko {
+            bindings = <&kakko_macro>;
+            key-positions = <3 4>;
+        };
+    };
+
+    macros {
+        kakko_macro: kakko_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            label = "KAKKO_MACRO";
+        };
     };
 
     keymap {
