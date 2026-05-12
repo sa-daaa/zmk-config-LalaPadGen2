@@ -103,7 +103,7 @@
         kakko_macro: kakko_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT &kp ENTER>;
             label = "KAKKO_MACRO";
         };
     };
@@ -114,7 +114,7 @@
         DEFAULT_LAYER {
             display-name = "Default";
             bindings = <
-&kp Q              &kp W         &kp E          &kp R                      &kp T                                                                   &kp Y        &kp U      &kp I                     &kp O               &kp P
+&mt COLON Q        &kp W         &kp E          &kp R                      &kp T                                                                   &kp Y        &kp U      &kp I                     &kp O               &kp P
 &kp A              &kp S         &kp D          &kp F                      &kp G                                                                   &kp H        &kp J      &kp K                     &kp L               &mt2 EQUAL MINUS
 &mt2 LEFT_SHIFT Z  &kp X         &kp C          &kp V                      &kp B                                                                   &kp N        &kp M      &kp COMMA                 &kp PERIOD          &mt AT SLASH
 &kp TAB            &lt 2 ESCAPE  &mt LCTRL TAB  &mt LEFT_GUI INT_MUHENKAN  &mt LEFT_ALT INT_HENKAN  &mt LEFT_SHIFT BACKSPACE  &mt RIGHT_ALT ENTER  &lt 1 SPACE  &lt 2 TAB  &mt RIGHT_GUI INT_HENKAN  &lt 3 INT_MUHENKAN  &lt 1 DEL
