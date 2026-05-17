@@ -114,26 +114,26 @@
         DEFAULT_LAYER {
             display-name = "Default";
             bindings = <
-&mt COLON Q        &kp W         &kp E          &kp R                      &kp T                                                                   &kp Y        &kp U      &kp I                     &kp O               &kp P
-&kp A              &kp S         &kp D          &kp F                      &kp G                                                                   &kp H        &kp J      &kp K                     &kp L               &mt2 EQUAL MINUS
-&mt2 LEFT_SHIFT Z  &kp X         &kp C          &kp V                      &kp B                                                                   &kp N        &kp M      &kp COMMA                 &kp PERIOD          &mt AT SLASH
-&kp TAB            &lt 2 ESCAPE  &mt LCTRL TAB  &mt LEFT_GUI INT_MUHENKAN  &mt LEFT_ALT INT_HENKAN  &mt LEFT_SHIFT BACKSPACE  &mt RIGHT_ALT ENTER  &lt 1 SPACE  &lt 2 TAB  &mt RIGHT_GUI INT_HENKAN  &lt 3 INT_MUHENKAN  &lt 1 DEL
-                   &kp F2        &kp RIGHT      &kp DOWN                   &kp LEFT                 &kp UP                    &kp LC(A)            &kp LC(C)    &kp LC(Z)  &kp LC(V)                 &kp LC(S)
-&mkp LCLK          &mkp RCLK     &mkp MCLK                                                                                                                                 &mkp LCLK                 &mkp RCLK           &mkp MCLK
-&mkp MB5           &mkp MB4      &kp LG(TAB)    &kp LG(D)                  &kp LCTRL                                                               &mkp MB5     &mkp MB4   &kp LG(TAB)               &kp LG(D)           &kp LCTRL
+&mt COLON Q        &kp W         &kp E          &kp R                      &kp T                                                           &kp Y        &kp U      &kp I                     &kp O               &kp P
+&kp A              &kp S         &kp D          &kp F                      &kp G                                                           &kp H        &kp J      &kp K                     &kp L               &mt2 EQUAL MINUS
+&mt2 LEFT_SHIFT Z  &kp X         &kp C          &kp V                      &kp B                                                           &kp N        &kp M      &kp COMMA                 &kp PERIOD          &mt AT SLASH
+&kp TAB            &lt 2 ESCAPE  &mt LCTRL TAB  &mt LEFT_GUI INT_MUHENKAN  &mt LEFT_ALT INT_HENKAN  &mt LEFT_SHIFT BACKSPACE  &lt 1 ENTER  &lt 2 SPACE  &lt 2 TAB  &mt RIGHT_GUI INT_HENKAN  &lt 3 INT_MUHENKAN  &lt 1 DEL
+                   &kp F2        &kp RIGHT      &kp DOWN                   &kp LEFT                 &kp UP                    &kp LC(A)    &kp LC(C)    &kp LC(Z)  &kp LC(V)                 &kp LC(S)
+&mkp LCLK          &mkp RCLK     &mkp MCLK                                                                                                                         &mkp LCLK                 &mkp RCLK           &mkp MCLK
+&mkp MB5           &mkp MB4      &kp LG(TAB)    &kp LG(D)                  &kp LCTRL                                                       &mkp MB5     &mkp MB4   &kp LG(TAB)               &kp LG(D)           &kp LCTRL
             >;
         };
 
         SECONDARY_LAYER {
             display-name = "secondary_layer";
             bindings = <
-&kp COLON         &kp SINGLE_QUOTE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON                            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH          &kp NON_US_BACKSLASH  &kp KP_PLUS
-&kp AT            &kp DOLLAR         &kp PERCENT           &kp AMPERSAND          &kp AMPERSAND                            &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PIPE           &kp CARET             &kp UNDER
-&kp MINUS         &kp EXCLAMATION    &kp DOUBLE_QUOTES     &kp HASH               &kp HASH                                 &kp LC(LS(N))     &trans             &trans             &trans                &trans
-&kp EQUAL         &trans             &trans                &trans                 &trans         &trans  &kp DEL           &trans            &trans             &trans             &trans                &kp LA(F4)
-                  &trans             &trans                &trans                 &trans         &trans  &kp LG(UP_ARROW)  &kp LG(LC(LEFT))  &kp LG(DOWN)       &kp LC(LG(RIGHT))  &trans
-&trans            &trans             &trans                                                                                                                     &trans             &trans                &trans
-&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans                &trans                 &trans                                   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans             &trans                &trans
+&kp COLON         &kp SINGLE_QUOTE   &kp LEFT_PARENTHESIS     &kp RIGHT_PARENTHESIS  &kp SEMICOLON                                     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH  &kp NON_US_BACKSLASH  &kp KP_PLUS
+&kp AT            &kp DOLLAR         &kp PERCENT              &kp AMPERSAND          &kp AMPERSAND                                     &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PIPE   &kp CARET             &kp UNDER
+&kp MINUS         &kp EXCLAMATION    &kp DOUBLE_QUOTES        &kp HASH               &kp HASH                                          &kp LC(LS(N))     &trans             &trans     &trans                &trans
+&kp EQUAL         &trans             &trans                   &trans                 &trans            &trans            &kp DEL       &trans            &trans             &trans     &trans                &kp LA(F4)
+                  &trans             &kp LG(LC(RIGHT_ARROW))  &kp LG(DOWN_ARROW)     &kp LG(LC(LEFT))  &kp LG(UP_ARROW)  &kp UP_ARROW  &kp LEFT          &kp DOWN           &kp RIGHT  &trans
+&trans            &trans             &trans                                                                                                                                 &trans     &trans                &trans
+&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans                   &trans                 &trans                                            &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans     &trans                &trans
             >;
         };
 
