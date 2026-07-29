@@ -116,20 +116,6 @@
             bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp ENTER &kp LEFT>;
             label = "KAKKO_MACRO";
         };
-
-        AD_macro: AD_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp ENTER>;
-            label = "AD_MACRO";
-        };
-
-        THINK_macro: THINK_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp TAB &kp ENTER>;
-            label = "THINK_MACRO";
-        };
     };
 
     keymap {
@@ -153,7 +139,7 @@
             bindings = <
 &kp COLON         &kp SINGLE_QUOTE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET                                &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH     &kp NON_US_BACKSLASH  &kp KP_PLUS
 &kp SEMI          &kp DOLLAR         &kp PERCENT           &kp AMPERSAND          &kp TILDE                                &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PIPE      &kp CARET             &kp UNDER
-&kp MINUS         &kp EXCLAMATION    &kp DOUBLE_QUOTES     &kp HASH               &trans                                   &kp LC(LS(N))     &trans             &trans        &trans                &trans
+&kp MINUS         &kp EXCLAMATION    &kp DOUBLE_QUOTES     &kp HASH               &kp AT                                   &kp LC(LS(N))     &trans             &trans        &trans                &trans
 &kp EQUAL         &trans             &trans                &trans                 &trans           &trans       &kp DEL    &trans            &trans             &kp LC(HOME)  &kp LC(END)           &kp LA(F4)
                   &trans             &kp LC(TAB)           &kp LG(D)              &kp LC(LS(TAB))  &kp LG(TAB)  &kp LC(A)  &kp LC(C)         &kp LC(Z)          &kp LC(V)     &trans
 &trans            &trans             &trans                                                                                                                     &trans        &trans                &trans
