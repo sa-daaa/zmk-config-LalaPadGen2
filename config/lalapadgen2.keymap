@@ -93,19 +93,9 @@
             key-positions = <8 9>;
         };
 
-        think {
-            bindings = <&THINK_macro>;
-            key-positions = <3 4>;
-        };
-
         number {
             bindings = <&tog 2>;
             key-positions = <39 41 40>;
-        };
-
-        admacro {
-            bindings = <&AD_macro>;
-            key-positions = <10 11>;
         };
     };
 
