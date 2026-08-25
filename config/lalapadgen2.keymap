@@ -102,6 +102,11 @@
             bindings = <&to 3>;
             key-positions = <20 30>;
         };
+
+        bt0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <30 31 32 33>;
+        };
     };
 
     macros {
