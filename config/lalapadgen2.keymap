@@ -19,16 +19,19 @@
     behaviors {
         zip_dyn_scale: zip_dyn_scale {
             compatible = "zmk,behavior-zip-dynamic-scale";
+            display-name = "TP Speed";
             #binding-cells = <2>;
         };
 
         zip_dyn_scale_set: zip_dyn_scale_set {
             compatible = "zmk,behavior-zip-dynamic-scale-set";
+            display-name = "TP Speed Set";
             #binding-cells = <2>;
         };
 
         mt2: mod_tap2 {
             compatible = "zmk,behavior-hold-tap";
+            display-name = "Mod-Tap 2";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
@@ -39,7 +42,7 @@
 
         tap_dance_layer_1and2: tap_dance_layer_1and2 {
             compatible = "zmk,behavior-tap-dance";
-            label = "td_mo12";
+            display-name = "TD mo1/mo3";
             #binding-cells = <0>;
             bindings = <&mo 1>, <&mo 3>;
         };
@@ -114,7 +117,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp ENTER &kp LEFT>;
-            label = "KAKKO_MACRO";
+            display-name = "Kakko ()";
         };
     };
 
@@ -172,6 +175,11 @@
 &trans   &trans   &trans   &trans   &trans                   &trans                         &trans                         &trans                         &trans                         &trans
             >;
         };
+
+        // ZMK Studio で追加できる予備レイヤー
+        extra1 { status = "reserved"; };
+        extra2 { status = "reserved"; };
+        extra3 { status = "reserved"; };
     };
 
     conditional_layers {
